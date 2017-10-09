@@ -1,0 +1,36 @@
+{
+  "name": "train-css-animation",
+  "version": "1.0.0",
+  "description": "train css animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "set NODE_ENV=development&& gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyamelkomukov/train-css-animation.git"
+  },
+  "author": "ilyamelkomukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyamelkomukov/train-css-animation/issues"
+  },
+  "homepage": "https://github.com/ilyamelkomukov/train-css-animation#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^3.3.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "browserslist": [
+    ">1%",
+    "last 10 versions",
+    "IE 9"
+  ]
+}

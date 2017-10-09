@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  max-width: 1920px;
+}
+.center-text {
+  text-align: center;
+}
+.hero {
+  font-size: 2em;
+}
+.hero-text {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=main.css.map */
