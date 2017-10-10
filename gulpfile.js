@@ -10,7 +10,8 @@ const gulp = require('gulp'),
   less = require('gulp-less'),
   postcss = require('gulp-postcss'),
   sourcemaps = require('gulp-sourcemaps'),
-  connect = require('gulp-connect');
+  connect = require('gulp-connect'),
+  browserSync = require('browser-sync');
 
 /*** End of gulp plugins ***/
 
@@ -56,9 +57,15 @@ gulp.task('styles', () => {
 /*** Start of connect task ***/
 
 gulp.task('connect', (done) => {
-  connect.server({
-    root: build,
-    port: 3000
+  // connect.server({
+  //   root: build,
+  //   port: 3000
+  // });
+
+  browserSync.init({
+    server: {
+      baseDir: build
+    }
   });
   done();
 });

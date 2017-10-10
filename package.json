@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ilyamelkomukov/train-css-animation#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-connect": "^5.0.0",
