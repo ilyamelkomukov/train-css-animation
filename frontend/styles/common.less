@@ -14,3 +14,23 @@ body {
 .center-text {
   text-align: center;
 }
+
+@keyframes back-color {
+  0%, 100% {
+    background-color: @anim-back-color;
+  }
+
+  50% {
+    background-color: rgb(210, 153, 26);
+  }
+}
+
+@keyframes symbol-wing {
+  0%, 19.999%, 25.001%, 44.999%, 70.001%, 74.999%, 76.001%, 77.999%, 79.001%, 100% {
+    opacity: 1;
+  }
+
+  20%, 25%, 45%, 70%, 75%, 76%, 78%, 79% {
+    opacity: .3;
+  }
+}

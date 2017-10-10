@@ -12,11 +12,121 @@ body {
 .center-text {
   text-align: center;
 }
+@-webkit-keyframes back-color {
+  0%,
+  100% {
+    background-color: #a2137b;
+  }
+  50% {
+    background-color: #d2991a;
+  }
+}
+@keyframes back-color {
+  0%,
+  100% {
+    background-color: #a2137b;
+  }
+  50% {
+    background-color: #d2991a;
+  }
+}
+@-webkit-keyframes symbol-wing {
+  0%,
+  19.999%,
+  25.001%,
+  44.999%,
+  70.001%,
+  74.999%,
+  76.001%,
+  77.999%,
+  79.001%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  25%,
+  45%,
+  70%,
+  75%,
+  76%,
+  78%,
+  79% {
+    opacity: .3;
+  }
+}
+@keyframes symbol-wing {
+  0%,
+  19.999%,
+  25.001%,
+  44.999%,
+  70.001%,
+  74.999%,
+  76.001%,
+  77.999%,
+  79.001%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  25%,
+  45%,
+  70%,
+  75%,
+  76%,
+  78%,
+  79% {
+    opacity: .3;
+  }
+}
 .hero {
   font-size: 2em;
 }
 .hero-text {
   font-size: 1.5em;
+}
+.animatable-element {
+  width: 70%;
+  height: 20em;
+  background: #a2137b;
+  margin: 0 auto;
+  -webkit-animation: back-color 1.5s ease-out alternate infinite;
+          animation: back-color 1.5s ease-out alternate infinite;
+}
+.TEst-picture {
+  text-align: center;
+  font-size: 2em;
+}
+.TEst-picture > img {
+  display: inline-block;
+}
+.error-message {
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  font: normal 5em / normal 'Monoton';
+  letter-spacing: .05em;
+  padding: .4em 0;
+  text-shadow: 0px 0px 8px white,
+    0px 0px 60px white,
+    0px 0px 80px white;
+}
+.error-message h2 {
+  font-weight: normal;
+  font-size: .5em;
+}
+.symbol-r {
+  -webkit-animation: symbol-wing 6s infinite;
+          animation: symbol-wing 6s infinite;
+}
+.symbol-0 {
+  -webkit-animation: symbol-wing 6s infinite;
+          animation: symbol-wing 6s infinite;
+}
+.error-details {
+  font-size: 1.85em;
+  color: #c11f1f;
+  text-shadow: 0px 0px 8px #530d0d, 0px 0px 60px #951818, 0px 0px 80px #c11f1f;
 }
 
 /*# sourceMappingURL=main.css.map */

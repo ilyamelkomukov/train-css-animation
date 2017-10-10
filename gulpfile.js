@@ -10,7 +10,6 @@ const gulp = require('gulp'),
   less = require('gulp-less'),
   postcss = require('gulp-postcss'),
   sourcemaps = require('gulp-sourcemaps'),
-  connect = require('gulp-connect'),
   browserSync = require('browser-sync');
 
 /*** End of gulp plugins ***/
@@ -56,7 +55,7 @@ gulp.task('styles', () => {
 
 /*** Start of connect task ***/
 
-gulp.task('connect', (done) => {
+gulp.task('serve', (done) => {
   // connect.server({
   //   root: build,
   //   port: 3000
@@ -84,7 +83,7 @@ gulp.task('watch', (done) => {
 
 gulp.task('default', gulp.series(
   gulp.parallel('layouts', 'styles'),
-  'connect',
+  'serve',
   'watch'), (done) => {
     done();
 });
